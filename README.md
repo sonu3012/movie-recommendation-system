@@ -1,37 +1,60 @@
+<div align="center">
+
 # 🎬 Movie Recommendation System
 
-A Machine Learning based **Movie Recommendation System** that recommends movies similar to a user's selected movie using **content-based filtering and cosine similarity**.
+### Discover your next favourite movie with Machine Learning
 
-## 🚀 Live Demo
+A **content-based recommendation engine** that suggests movies similar to the one you love, powered by **cosine similarity** and served through an interactive **Streamlit** web app.
+
+<br>
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://movie-recommendation-system-dxz8fqsdfsbas5hjuwh2qu.streamlit.app/)
 
-**Live Application:**
-https://movie-recommendation-system-dxz8fqsdfsbas5hjuwh2qu.streamlit.app/
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
-## 📌 Project Overview
+[🚀 Live Demo](#-live-demo) · [🧠 How It Works](#-how-it-works) · [✨ Features](#-features) · [💻 Run Locally](#-run-locally) · [📈 Roadmap](#-roadmap)
 
-The Movie Recommendation System helps users discover movies similar to a movie they already like.
+</div>
 
-The system uses movie metadata to calculate similarity between movies. When a user selects a movie, the recommendation engine identifies the most similar movies and displays the top 5 recommendations.
+---
 
-## 🎯 Objective
+## 🚀 Live Demo
 
-The main objective of this project is to build and deploy a practical Machine Learning recommendation system that can:
+| | |
+|---|---|
+| **🌐 Live Application** | 👉 **[Try the Movie Recommender](https://movie-recommendation-system-dxz8fqsdfsbas5hjuwh2qu.streamlit.app/)** |
+| **📦 GitHub Repository** | [sonu3012/movie-recommendation-system](https://github.com/sonu3012/movie-recommendation-system) |
 
-* Process movie information
-* Calculate similarity between movies
-* Recommend similar movies
-* Provide an interactive web interface
-* Deploy the ML application online
+> Pick a movie, and the app instantly returns the **top 5 most similar movies**.
 
-## 🧠 Recommendation Approach
+<!-- Add a screenshot or GIF of the app here -->
+<!-- ![App Preview](./assets/preview.png) -->
 
-This project uses **Content-Based Filtering**.
+---
 
-The system compares the characteristics/features associated with movies and calculates their similarity.
+## 📌 Overview
 
-The recommendation process is:
+The **Movie Recommendation System** helps users discover movies similar to ones they already enjoy. It analyses movie metadata, measures how alike movies are, and surfaces the closest matches through a clean web interface.
+
+### 🎯 Objectives
+
+- 🎞️ Process and prepare movie information
+- 📐 Calculate similarity between movies
+- 🤖 Recommend similar movies accurately
+- 🖥️ Provide an interactive web interface
+- ☁️ Deploy the ML application online
+
+---
+
+## 🧠 How It Works
+
+This project uses **Content-Based Filtering**: it compares the characteristics of movies and recommends the ones that are most alike.
+
+### 🔄 Pipeline
 
 ```text
 Movie Dataset
@@ -51,23 +74,16 @@ Top Similar Movies
 Streamlit Application
 ```
 
-## 📊 How It Works
+### 📊 Step by Step
 
-### 1. Data Processing
+| Step | What happens |
+|---|---|
+| **1. Data Processing** | Movie data is cleaned and prepared using **Python** and **Pandas** |
+| **2. Feature Representation** | Relevant movie information is converted into a **numerical representation** that can be compared mathematically |
+| **3. Similarity Calculation** | **Cosine Similarity** measures how similar any two movies are |
+| **4. Recommendation** | The most similar movies to the user's selection are returned |
 
-Movie data is processed using Python and Pandas.
-
-### 2. Feature Representation
-
-Relevant movie information is converted into a representation that can be compared mathematically.
-
-### 3. Similarity Calculation
-
-The system uses **Cosine Similarity** to determine how similar two movies are.
-
-### 4. Recommendation
-
-When a user selects a movie:
+### 🎬 Recommendation Flow
 
 ```text
 Selected Movie
@@ -83,72 +99,77 @@ Select Top 5
 Display Recommendations
 ```
 
-## 🛠 Technologies Used
-
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* Streamlit
-* Jupyter Notebook
-* Git
-* GitHub
+---
 
 ## ✨ Features
 
-* 🎬 Movie selection
-* 🤖 Machine Learning based recommendations
-* 🔎 Content-based filtering
-* 📊 Cosine similarity
-* ⚡ Fast recommendation lookup
-* 🖥 Interactive Streamlit interface
-* ☁️ Online deployment
+- 🎬 **Movie selection** from a list
+- 🤖 **ML-powered** recommendations
+- 🔎 **Content-based filtering**
+- 📊 **Cosine similarity** engine
+- ⚡ **Fast lookup** using a precomputed similarity matrix
+- 🖥️ **Interactive Streamlit interface**
+- ☁️ **Live online deployment**
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Tools |
+|---|---|
+| **Language** | Python |
+| **Data Processing** | Pandas, NumPy |
+| **Machine Learning** | Scikit-learn |
+| **Web App** | Streamlit |
+| **Development** | Jupyter Notebook |
+| **Version Control** | Git, GitHub, Git LFS |
+| **Deployment** | Streamlit Community Cloud |
+
+---
 
 ## 📂 Project Structure
 
 ```text
 Movie_Recommendation_Deployment/
 │
-├── app.py
-├── movie_list.pkl
-├── similarity.pkl
-├── requirements.txt
+├── app.py               # Streamlit application
+├── movie_list.pkl       # Processed movie data
+├── similarity.pkl       # Precomputed similarity matrix
+├── requirements.txt     # Python dependencies
 ├── .gitignore
-├── .gitattributes
+├── .gitattributes       # Git LFS configuration
 └── README.md
 ```
 
-## 💻 Run the Project Locally
+---
 
-### Step 1: Clone the repository
+## 💻 Run Locally
 
+### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/sonu3012/movie-recommendation-system.git
 ```
 
-### Step 2: Open the project
-
+### 2️⃣ Open the project
 ```bash
 cd movie-recommendation-system
 ```
 
-### Step 3: Install dependencies
-
+### 3️⃣ Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 4: Run Streamlit
-
+### 4️⃣ Launch the app
 ```bash
 python -m streamlit run app.py
 ```
 
-The application will open in your browser.
+The application will open automatically in your browser.
 
-## 📦 Requirements
+> 📦 **Note:** Large `.pkl` files are stored with **Git LFS**. Run `git lfs install` before cloning if the files don't download correctly.
 
-The project uses the following Python packages:
+### 📋 Requirements
 
 ```text
 streamlit
@@ -157,104 +178,45 @@ numpy
 scikit-learn
 ```
 
+---
+
 ## 🌐 Deployment
 
-The application is deployed using **Streamlit Community Cloud** and connected to the GitHub repository.
+The app is deployed on **Streamlit Community Cloud** and connected directly to this GitHub repository. Every update pushed to the repository can be reflected in the live application automatically.
 
-Every update pushed to the repository can be reflected in the deployed application.
+---
 
-## 🔗 Project Links
+## 📈 Roadmap
 
-**GitHub:**
-https://github.com/sonu3012/movie-recommendation-system
+- [ ] 🖼️ Movie posters
+- [ ] 📝 Movie descriptions
+- [ ] 🎭 Genre filtering
+- [ ] 🔍 Search functionality
+- [ ] ⭐ Rating information
+- [ ] 🎥 Movie trailers
+- [ ] 👤 Personalized user recommendations
+- [ ] 🧪 Improved recommendation algorithms
+- [ ] 🚀 More advanced recommendation techniques
 
-**Live Demo:**
-https://movie-recommendation-system-dxz8fqsdfsbas5hjuwh2qu.streamlit.app/
-
-## 📈 Future Improvements
-
-Possible future improvements include:
-
-* Movie posters
-* Movie descriptions
-* Genre filtering
-* Search functionality
-* Rating information
-* Movie trailers
-* Personalized user recommendations
-* Improved recommendation algorithms
-* More advanced recommendation techniques
+---
 
 ## 👨‍💻 Author
 
+<div align="center">
+
 **Sonu Kumar Ray**
+B.Tech — Artificial Intelligence & Data Science
 
-B.Tech – Artificial Intelligence & Data Science
+[![GitHub](https://img.shields.io/badge/GitHub-sonu3012-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sonu3012)
 
-GitHub: https://github.com/sonu3012
+</div>
 
-## ⭐ Project
+---
 
-If you find this project useful, feel free to explore the repository and try the live application.
+<div align="center">
 
+### ⭐ If you found this project useful, give it a star!
 
-📊 How It Works
-1. Data Processing
+**[Try the Live App](https://movie-recommendation-system-dxz8fqsdfsbas5hjuwh2qu.streamlit.app/)** · **[View Repository](https://github.com/sonu3012/movie-recommendation-system)**
 
-Movie data is processed using Python and Pandas.
-
-2. Feature Representation
-
-Relevant movie information is converted into a numerical representation that can be compared mathematically.
-
-3. Similarity Calculation
-
-The system uses Cosine Similarity to determine how similar two movies are.
-
-4. Recommendation
-
-When a user selects a movie:
-
-Selected Movie
-      ↓
-Find Movie Index
-      ↓
-Retrieve Similarity Scores
-      ↓
-Sort Similar Movies
-      ↓
-Select Top 5
-      ↓
-Display Recommendations
-✨ Features
-🎬 Movie selection
-🤖 Machine Learning based recommendations
-🔎 Content-based filtering
-📊 Cosine similarity
-⚡ Fast recommendation lookup
-🖥 Interactive Streamlit interface
-☁️ Online deployment
-🛠 Technologies Used
-Python
-Pandas
-NumPy
-Scikit-learn
-Streamlit
-Jupyter Notebook
-Git
-GitHub
-Git LFS
-
-
-📂 Project Structure
-Movie_Recommendation_Deployment/
-│
-├── app.py
-├── movie_list.pkl
-├── similarity.pkl
-├── requirements.txt
-├── .gitignore
-├── .gitattributes
-└── README.md
-
-
+</div>
